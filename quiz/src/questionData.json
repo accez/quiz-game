@@ -1,0 +1,554 @@
+{
+  "results": [
+    {
+      "id": "1",
+      "question": "Which 1958 movie starred Kirk Douglas and Tony Curtis as half-brothers Einar and Eric?",
+      "correct_answer": "The Vikings",
+      "answers": [
+        "The Long Ships",
+        "Prince Valiant",
+        "Spartacus",
+        "The Vikings"
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Which retired American football quarterback played himself in &#039;Ace Ventura: Pet Detective&#039; and &#039;Little Nicky&#039;?",
+      "correct_answer": "Dan Marino",
+      "answers": [
+        "John Elway",
+        "Tom Brady",
+        "Joe Montana",
+        "Dan Marino"
+      ]
+    },
+    {
+      "id": "3",
+      "question": "What was Marilyn Monroe`s character&#039;s first name in the film &quot;Some Like It Hot&quot;?",
+      "correct_answer": "Sugar",
+      "answers": [
+        "Honey",
+        "Caramel",
+        "Candy",
+        "Sugar"
+      ]
+    },
+    {
+      "id": "4",
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing\tspree?",
+      "correct_answer": "Westworld",
+      "answers": [
+        "Runaway",
+        "Android",
+        "The Terminators",
+        "Westworld"
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Who voiced the character Draco in the 1996 movie &#039;DragonHeart&#039;?",
+      "correct_answer": "Sean Connery",
+      "answers": [
+        "Dennis Quaid",
+        "Pete Postlethwaite",
+        "Brian Thompson",
+        "Sean Connery"
+      ]
+    },
+    {
+      "id": "6",
+      "question": "In which 1955 film does Frank Sinatra play Nathan Detroit?",
+      "correct_answer": "Guys and Dolls",
+      "answers": [
+        "Anchors Aweigh",
+        "From Here to Eternity",
+        "High Society",
+        "Guys and Dolls"
+      ]
+    },
+    {
+      "id": "7",
+      "question": "What is the name of the robot in the 1951 science fiction film classic &#039;The Day the Earth Stood Still&#039;?",
+      "correct_answer": "Gort",
+      "answers": [
+        "Robby",
+        "Colossus",
+        "Box",
+        "Gort"
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Which of the following James Bond villains is not affiliated with the SPECTRE organization?",
+      "correct_answer": "Auric Goldfinger",
+      "answers": [
+        "Dr. Julius No",
+        "Rosa Klebb",
+        "Emilio Largo",
+        "Auric Goldfinger"
+      ]
+    },
+    {
+      "id": "9",
+      "question": "Who directed the 1973 film &quot;American Graffiti&quot;?",
+      "correct_answer": "George Lucas",
+      "answers": [
+        "Ron Howard",
+        "Francis Ford Coppola",
+        "Steven Spielberg",
+        "George Lucas"
+      ]
+    },
+    {
+      "id": "10",
+      "question": "Who played Batman in the 1997 film &quot;Batman and Robin&quot;?",
+      "correct_answer": "George Clooney",
+      "answers": [
+        "Michael Keaton",
+        "Val Kilmer",
+        "Christian Bale",
+        "George Clooney"
+      ]
+    },
+    {
+      "id": "11",
+      "question": "This movie contains the quote, &quot;What we&#039;ve got here is a failure to communicate.&quot;",
+      "correct_answer": "Cool Hand Luke",
+      "answers": [
+        "Bonnie and Clyde",
+        "The Graduate",
+        "In the Heat of the Night",
+        "Cool Hand Luke"
+      ]
+    },
+    {
+      "id": "12",
+      "question": "What is the name of the first &quot;Star Wars&quot; film by release order?",
+      "correct_answer": "A New Hope",
+      "answers": [
+        "The Phantom Menace",
+        "The Force Awakens",
+        "Revenge of the Sith",
+        "A New Hope"
+      ]
+    },
+    {
+      "id": "13",
+      "question": "What is the name of the Artificial Intelligence system in the 1983 film, &quot;WarGames&quot;?",
+      "correct_answer": "War Operation Plan Response",
+      "answers": [
+        "Self Evolving Thought Helix",
+        "Master Control Program",
+        "West Campus Analog Computer",
+        "War Operation Plan Response"
+      ]
+    },
+    {
+      "id": "14",
+      "question": "Which movie sequel had improved box office results compared to its original film?",
+      "correct_answer": "Toy Story 2",
+      "answers": [
+        "Sin City: A Dame to Kill For",
+        "Speed 2: Cruise Control",
+        "Son of the Mask",
+        "Toy Story 2"
+      ]
+    },
+    {
+      "id": "15",
+      "question": "Which iconic character is featured in movies such as &quot;The Enforcer&quot;, &quot;Sudden Impact&quot;, and &quot;The Dead Pool&quot;?",
+      "correct_answer": "Dirty Harry",
+      "answers": [
+        "Indiana Jones",
+        "James Bond",
+        "Harry Potter",
+        "Dirty Harry"
+      ]
+    },
+    {
+      "id": "16",
+      "question": "In the 1994 movie &quot;Speed&quot;, what is the minimum speed the bus must go to prevent to bomb from exploding?",
+      "correct_answer": "50 mph",
+      "answers": [
+        "60 mph",
+        "40 mph",
+        "70 mph",
+        "50 mph"
+      ]
+    },
+    {
+      "id": "17",
+      "question": "In the 1971 film &quot;Willy Wonka &amp; the Chocolate Factory&quot;, who played Willy Wonka?",
+      "correct_answer": "Gene Wilder",
+      "answers": [
+        "Shia LeBouf",
+        "Peter Ostrum",
+        "Johnny Depp",
+        "Gene Wilder"
+      ]
+    },
+    {
+      "id": "18",
+      "question": "Who plays the Nemesis in the Resident Evil movies?",
+      "correct_answer": "Matthew Taylor",
+      "answers": [
+        "Jason Dip",
+        "Eric Mabius",
+        "Jimmy Matts",
+        "Matthew Taylor"
+      ]
+    },
+    {
+      "id": "19",
+      "question": "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie &quot;Hardcore Henry&quot;?",
+      "correct_answer": "Akan",
+      "answers": [
+        "Estelle",
+        "Jimmy",
+        "Henry",
+        "Akan"
+      ]
+    },
+    {
+      "id": "20",
+      "question": "In the 1979 British film &quot;Quadrophenia&quot; what is the name of the seaside city the mods are visiting?",
+      "correct_answer": "Brighton",
+      "answers": [
+        "Eastbourne",
+        "Mousehole",
+        "Bridlington",
+        "Brighton"
+      ]
+    },
+    {
+      "id": "21",
+      "question": "In the 1979 British film &quot;Quadrophenia&quot; what is the name of the main protagonist?",
+      "correct_answer": "Jimmy Cooper",
+      "answers": [
+        "Pete Townshend",
+        "Franc Roddam",
+        "Archie Bunker",
+        "Jimmy Cooper"
+      ]
+    },
+    {
+      "id": "22",
+      "question": "Who played Baron Victor Frankestein in the 1957 Hammer horror film &quot;The Curse of Frankenstein&quot;?",
+      "correct_answer": "Peter Cushing",
+      "answers": [
+        "Boris Karloff",
+        "Vincent Price",
+        "Lon Chaney Jr.",
+        "Peter Cushing"
+      ]
+    },
+    {
+      "id": "23",
+      "question": "Which one of these films are shot entirely in one-take?",
+      "correct_answer": "Russian Ark",
+      "answers": [
+        "Good Will Hunting",
+        "Birdman",
+        "Schindler&#039;s List",
+        "Russian Ark"
+      ]
+    },
+    {
+      "id": "24",
+      "question": "Which one of these action movies are shot entirely in one take?",
+      "correct_answer": "Victoria",
+      "answers": [
+        "Ip Man 2",
+        "The Bourne Legacy",
+        "L&eacute;on: The Professional",
+        "Victoria"
+      ]
+    },
+    {
+      "id": "25",
+      "question": "Which movie of film director Stanley Kubrick is known to be an adaptation of a Stephen King novel?",
+      "correct_answer": "The Shining",
+      "answers": [
+        "2001: A Space Odyssey",
+        " Dr. Strangelove ",
+        "Eyes Wide Shut",
+        "The Shining"
+      ]
+    },
+    {
+      "id": "26",
+      "question": "In what year was the movie &quot;Police Academy&quot; released?",
+      "correct_answer": "1984",
+      "answers": [
+        "1986",
+        "1985",
+        "1983",
+        "1984"
+      ]
+    },
+    {
+      "id": "27",
+      "question": "In The Lord of the Rings: The Fellowship of the Ring, which one of the following characters from the book was left out of the film?",
+      "correct_answer": "Tom Bombadil",
+      "answers": [
+        "Strider",
+        "Barliman Butterbur",
+        "Celeborn",
+        "Tom Bombadil"
+      ]
+    },
+    {
+      "id": "28",
+      "question": "Darth Vader&#039;s famous reveal to Luke is iconic. But which of these is the right one?",
+      "correct_answer": "&quot;No. I am your father.&quot;",
+      "answers": [
+        "&quot;Luke, I am your father.&quot;",
+        "&quot;You&#039;re wrong. I am your father.&quot;",
+        "&quot;The truth is that I am your father.&quot;",
+        "&quot;No. I am your father.&quot;"
+      ]
+    },
+    {
+      "id": "29",
+      "question": "Which animated film did Steven Lisberger direct in 1980 before going on to direct Tron?",
+      "correct_answer": "Animalympics",
+      "answers": [
+        "The Fox and the Hound",
+        "The Black Cauldron",
+        "The Great Mouse Detecive",
+        "Animalympics"
+      ]
+    },
+    {
+      "id": "30",
+      "question": "What year did the James Cameron film &quot;Titanic&quot; come out in theaters?",
+      "correct_answer": "1997",
+      "answers": [
+        "1996",
+        "1998",
+        "1999",
+        "1997"
+      ]
+    },
+    {
+      "id": "31",
+      "question": "What city did the monster attack in the film, &quot;Cloverfield&quot;?",
+      "correct_answer": "New York, New York",
+      "answers": [
+        "Las Vegas, Nevada",
+        "Chicago, Illinois",
+        "Orlando, Florida",
+        "New York, New York"
+      ]
+    },
+    {
+      "id": "32",
+      "question": "Who voiced Metalbeard in &quot;The Lego Movie&quot;?",
+      "correct_answer": "Nick Offerman",
+      "answers": [
+        "Liam Neeson",
+        "Morgan Freeman",
+        "Will Arnet",
+        "Nick Offerman"
+      ]
+    },
+    {
+      "id": "33",
+      "question": "What was the name of the protagonist in the movie Commando (1985)?",
+      "correct_answer": "John Matrix",
+      "answers": [
+        "Ben Richards",
+        "Douglas Quaid",
+        "Harry Tasker",
+        "John Matrix"
+      ]
+    },
+    {
+      "id": "34",
+      "question": "Who is the director of the 1991 film &quot;Silence of the Lambs&quot;?",
+      "correct_answer": "Jonathan Demme",
+      "answers": [
+        "Stanley Kubrick",
+        "Frank Darabont",
+        "Michael Bay",
+        "Jonathan Demme"
+      ]
+    },
+    {
+      "id": "35",
+      "question": "Leonardo Di Caprio won his first Best Actor Oscar for his performance in which film?",
+      "correct_answer": "The Revenant",
+      "answers": [
+        "The Wolf Of Wall Street",
+        "Shutter Island",
+        "Inception",
+        "The Revenant"
+      ]
+    },
+    {
+      "id": "36",
+      "question": "In the &quot;Jurassic Park&quot; universe, what is the name of the island that contains InGen&#039;s Site B?",
+      "correct_answer": "Isla Sorna",
+      "answers": [
+        "Isla Nublar",
+        "Isla Pena",
+        "Isla Muerta",
+        "Isla Sorna"
+      ]
+    },
+    {
+      "id": "37",
+      "question": "What is the make and model of the tour vehicles in &quot;Jurassic Park&quot;?",
+      "correct_answer": "1992 Ford Explorer XLT",
+      "answers": [
+        "1992 Toyota Land Cruiser",
+        "1992 Jeep Wrangler YJ Sahar",
+        "Mercedes M-Class",
+        "1992 Ford Explorer XLT"
+      ]
+    },
+    {
+      "id": "38",
+      "question": "In &quot;Jurassic World&quot;, which company purchases InGen and creates Jurassic World?",
+      "correct_answer": "Masrani Global Corporation ",
+      "answers": [
+        "Biology Synthetics Technologies",
+        "International Genetics Incorporated",
+        "International Genetic Technologies",
+        "Masrani Global Corporation "
+      ]
+    },
+    {
+      "id": "39",
+      "question": "Who plays &quot;Bruce Wayne&quot; in the 2008 movie &quot;The Dark Knight&quot;?",
+      "correct_answer": "Christian Bale",
+      "answers": [
+        "Michael Caine",
+        "Ron Dean",
+        "Heath Ledger",
+        "Christian Bale"
+      ]
+    },
+    {
+      "id": "40",
+      "question": "Which actor plays the character &quot;Tommy Jarvis&quot; in &quot;Friday the 13th: The Final Chapter&quot; (1984)?",
+      "correct_answer": "Corey Feldman",
+      "answers": [
+        "Macaulay Culkin",
+        "Mel Gibson",
+        "Mark Hamill",
+        "Corey Feldman"
+      ]
+    },
+    {
+      "id": "41",
+      "question": "In Mulan (1998), who is the leader of the Huns?",
+      "correct_answer": "Shan Yu",
+      "answers": [
+        "Chien-Po",
+        "Li Shang",
+        "Fa Zhou",
+        "Shan Yu"
+      ]
+    },
+    {
+      "id": "42",
+      "question": "What character in the Winnie the Pooh films was added by Disney and does not appear in the original books?",
+      "correct_answer": "Gopher",
+      "answers": [
+        "Tigger",
+        "Heffalumps",
+        "Rabbit",
+        "Gopher"
+      ]
+    },
+    {
+      "id": "43",
+      "question": "What is Lilo&#039;s last name from Lilo and Stitch?",
+      "correct_answer": "Pelekai",
+      "answers": [
+        "Anoaʻi",
+        "Kealoha",
+        "Kuʻulei",
+        "Pelekai"
+      ]
+    },
+    {
+      "id": "44",
+      "question": "What is the name of the queen&#039;s pet in A Bug&#039;s Life?",
+      "correct_answer": "Aphie",
+      "answers": [
+        "Flik",
+        "Hopper",
+        "Dot",
+        "Aphie"
+      ]
+    },
+    {
+      "id": "45",
+      "question": "Who provided a majority of the songs and lyrics for &quot;Spirit: Stallion of the Cimarron&quot;?",
+      "correct_answer": "Bryan Adams",
+      "answers": [
+        "Smash Mouth",
+        "Oasis",
+        "Air Supply",
+        "Bryan Adams"
+      ]
+    },
+    {
+      "id": "46",
+      "question": "Which of these Disney classics was released in 1970?",
+      "correct_answer": "The Aristocats",
+      "answers": [
+        "One Hundred and One Dalmatians",
+        "The Fox and the Hound",
+        "The Little Mermaid",
+        "The Aristocats"
+      ]
+    },
+    {
+      "id": "47",
+      "question": "Which stand-up comedian voiced the talking parrot &quot;Iago&quot; in Disney&#039;s 1992 adaptation of Aladdin?",
+      "correct_answer": "Gilbert Gottfried",
+      "answers": [
+        "Robin Williams",
+        "Pauly Shore",
+        "Jonathan Freeman",
+        "Gilbert Gottfried"
+      ]
+    },
+    {
+      "id": "48",
+      "question": "Which 90&#039;s comedy cult classic features cameos appearances from Meat Loaf, Alice Cooper and Chris Farley?",
+      "correct_answer": "Wayne&#039;s World",
+      "answers": [
+        "Bill &amp; Ted&#039;s Excellent Adventure",
+        "Dumb and Dumber",
+        "Austin Powers: International Man of Mystery",
+        "Wayne&#039;s World"
+      ]
+    },
+    {
+      "id": "49",
+      "question": "Which actor and martial artist starred as Colonel Guile in the 1994 action film adaptation of Street Fighter?",
+      "correct_answer": "Jean-Claude Van Damme",
+      "answers": [
+        "Chuck Norris",
+        "Steven Seagal",
+        "Scott Adkins",
+        "Jean-Claude Van Damme"
+      ]
+    },
+    {
+      "id": "50",
+      "question": "Who performed the opening theme song for the James Bond 007 movie &quot;Goldfinger&quot;?",
+      "correct_answer": "Shirley Basey",
+      "answers": [
+        "Tom Jones",
+        "John Barry",
+        "Sheena Easton",
+        "Shirley Basey"
+      ]
+    }
+  ]
+}
