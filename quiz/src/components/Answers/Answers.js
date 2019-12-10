@@ -1,5 +1,7 @@
 import React from 'react'
-import Answer from './Answer'
+import Answer from '../Answer/Answer'
+import './answers-styles.scss'
+
 
 const Answers = (props) => {
   const data = props.answer
@@ -8,7 +10,7 @@ const Answers = (props) => {
   )
 
   return (
-    <div>
+    <div className="answer-container">
       {listAnswers}
     </div>
   )

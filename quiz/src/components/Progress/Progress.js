@@ -2,7 +2,7 @@ import React from 'react'
 
 const Progress = (props) => {
   return (
-    <h2>Question {props.current} of {props.total}</h2>
+    <h3>Question {props.current} of {props.total}</h3>
   )
 }
 export default Progress
