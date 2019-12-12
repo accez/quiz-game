@@ -4,9 +4,11 @@ import './answers-styles.scss'
 
 
 const Answers = (props) => {
-  const data = props.answer
-  const listAnswers = data.answers.map((answer, id) =>
-    <Answer key={id} answer={answer} />
+  const listAnswers = props.answer.answers.map((answer, index) =>
+    <Answer
+      key={index}
+      answer={answer}
+      nextQuestion={props.nextQuestion} />
   )
 
   return (
