@@ -8,11 +8,14 @@ import { shuffleData } from './helper/shuffle'
 
 
 function App() {
+  let [currentQuestion, setCurrentQuestion] = useState(0)
   //Using helper function shuffleData to suffle the data
   //i get from my JSON file.7
   shuffleData(questionData.results)
-  let [currentQuestion, setCurrentQuestion] = useState(0)
-  const data = questionData.results[currentQuestion]
+  let copyData = [...questionData.results]
+  copyData.splice(10, 50)
+  const data = copyData[currentQuestion]
+  console.log(copyData)
 
   //Function that changes the state of currentQuestion
   const nextQuestion = () => {
@@ -25,7 +28,7 @@ function App() {
         <h1 >Movie Quiz</h1>
       </header>
       <main>
-        <Progress total={questionData.results.length} current={currentQuestion + 1} />
+        <Progress total={copyData.length} current={currentQuestion + 1} />
         <Question question={data.question} />
         <Answers
           answer={data}
