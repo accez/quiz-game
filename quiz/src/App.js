@@ -1,23 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import Progress from './components/Progress/Progress'
 import Question from './components/Question/Question'
 import Answers from './components/Answers/Answers'
 import questionData from './questionData'
+import { shuffleData } from './helper/shuffle'
 
 
 function App() {
+  //Using helper function shuffleData to suffle the data
+  //i get from my JSON file.7
+  shuffleData(questionData.results)
+  let [currentQuestion, setCurrentQuestion] = useState(0)
+  const data = questionData.results[currentQuestion]
 
-  const data = questionData.results[0]
+  //Function that changes the state of currentQuestion
+  const nextQuestion = () => {
+    setCurrentQuestion(currentQuestion + 1)
+  }
+
   return (
     <div className="container">
       <header>
-        <h1>Movie Quiz</h1>
+        <h1 >Movie Quiz</h1>
       </header>
       <main>
-        <Progress total="10" current="1" />
+        <Progress total={questionData.results.length} current={currentQuestion + 1} />
         <Question question={data.question} />
-        <Answers answer={data} />
+        <Answers
+          answer={data}
+          nextQuestion={nextQuestion} />
       </main>
     </div>
   );
