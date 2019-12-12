@@ -1,14 +1,20 @@
 import React from 'react'
 import Answer from '../Answer/Answer'
+import { shuffleData } from '../../helper/shuffle'
 import './answers-styles.scss'
 
 
 const Answers = (props) => {
-  const listAnswers = props.answer.answers.map((answer, index) =>
+
+  let answers = [...props.answer.answers]
+  shuffleData(answers)
+
+  const listAnswers = answers.map((answer, index) =>
     <Answer
       key={index}
       answer={answer}
-      nextQuestion={props.nextQuestion} />
+      correctScoreAndNextQuestion={props.correctScoreAndNextQuestion}
+    />
   )
 
   return (
