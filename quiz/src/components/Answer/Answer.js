@@ -3,8 +3,8 @@ import './answer-styles.scss'
 
 const Answer = (props) => {
   return (
-    <button value={props.number}>
-      {props.answer}
+    <button value={props.number} onClick={props.nextQuestion}>
+      {props.answer.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}
     </button>
   )
 }
