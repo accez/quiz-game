@@ -4,7 +4,7 @@ import './answer-styles.scss'
 const Answer = (props) => {
   return (
     <button value={props.number} onClick={props.nextQuestion}>
-      {props.answer.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}
+      {props.answer.replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&amp;/g, '&')}
     </button>
   )
 }
