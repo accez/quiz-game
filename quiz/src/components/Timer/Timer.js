@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 const Timer = (props) => {
   // initialize timeLeft with the seconds prop
   const [timeLeft, setTimeLeft] = useState(props.seconds)
+  const [currentQuestion, setCurrentQuestion] = useState(props.currentQuestion)
 
   useEffect(() => {
     // exit early when we reach 0
@@ -13,6 +14,10 @@ const Timer = (props) => {
     }
     if (timeLeft === 0 && props.currentQuestion + 1 >= 10) {
       props.setSummery(true)
+    }
+    if (currentQuestion !== props.currentQuestion) {
+      setTimeLeft(15)
+      setCurrentQuestion(props.currentQuestion)
     }
     // save intervalId to clear the interval when the
     // component re-renders
