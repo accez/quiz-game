@@ -66,7 +66,7 @@ function App() {
         <header>
           <h1>Movie Quiz</h1>
           <Timer seconds={15}
-            currentQuestion={currentQuestion}
+            currentQuestion={currentQuestion + 1}
             setCurrentQuestion={setCurrentQuestion}
             setSummery={setSummery}
             unansweredIncrament={unansweredIncrament} />
