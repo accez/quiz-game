@@ -4,6 +4,8 @@ import Progress from './components/Progress/Progress'
 import Question from './components/Question/Question'
 import Answers from './components/Answers/Answers'
 import Summery from './components/Summery/Summery'
+import StartScreen from './components/StartScreen/StartScreen'
+import Timer from './components/Timer/Timer'
 import questionData from './questionData'
 import { shuffleData } from './helper/shuffle'
 
@@ -11,11 +13,14 @@ import { shuffleData } from './helper/shuffle'
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
+  const [unanswered, setUnanswered] = useState(0)
   const [summery, setSummery] = useState(false)
   const [questionsData, setQuestionsData] = useState([])
+  const [startScreen, setStartScreen] = useState(false)
+  let data = questionsData[currentQuestion]
   /**
    * Using helper function shuffleData to suffle the data
-  i get from my JSON file.7 
+  i get from my JSON file.
   **/
   useEffect(() => {
     shuffleData(questionData.results)
@@ -24,17 +29,19 @@ function App() {
     setQuestionsData(spreadQuestionsData)
   }, [])
 
-  let data = questionsData[currentQuestion]
 
-  /**
-   * If target equals to the correct answer increment score with one.
-   * Then update the state to show a new question
-   */
+  const unansweredIncrament = () => {
+    setUnanswered(unanswered + 1)
+  }
 
   const correctScoreAndNextQuestion = e => {
+    /** if target value equals correct answer increment score */
     if (e.target.value === data.correct_answer) {
       setScore(score + 1)
     }
+    /**currentQuestion is less then array data then we increment currentQuestion to get a new question.
+     * If not we want our SummeryPage to load.
+     */
     if (currentQuestion + 1 < questionsData.length) {
       setCurrentQuestion(currentQuestion + 1)
       return
@@ -42,23 +49,32 @@ function App() {
     setSummery(true)
   }
 
-  //Fix a good loading screen for the quiz so state can load :) 
-  // Remove this quick fix
-  if (data === undefined) {
-    return <div>Loading...</div>
+  if (startScreen === false) {
+    return (
+      <StartScreen setStartScreen={setStartScreen} />
+    )
   }
   else if (summery) {
     return (
-      <Summery score={score} total={questionsData.length} />
+      <Summery
+        score={score}
+        total={questionsData.length} />
     )
   } else {
     return (
       <div className="container">
         <header>
           <h1>Movie Quiz</h1>
+          <Timer seconds={15}
+            currentQuestion={currentQuestion}
+            setCurrentQuestion={setCurrentQuestion}
+            setSummery={setSummery}
+            unansweredIncrament={unansweredIncrament} />
         </header>
         <main>
-          <Progress total={questionsData.length} current={currentQuestion + 1} />
+          <Progress
+            total={questionsData.length}
+            current={currentQuestion + 1} />
           <Question question={data.question} />
           <Answers
             answer={data}
