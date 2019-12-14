@@ -12,7 +12,7 @@ const Timer = (props) => {
       props.unansweredIncrament()
       setTimeLeft(15)
     }
-    if (timeLeft === 0 && props.currentQuestion + 1 >= 10) {
+    if (timeLeft === 0 && currentQuestion + 1 >= 10) {
       props.setSummery(true)
     }
     if (currentQuestion !== props.currentQuestion) {
@@ -28,7 +28,7 @@ const Timer = (props) => {
     return () => clearInterval(intervalId);
     // add timeLeft as a dependency to re-rerun the effect
     // when we update it
-  }, [timeLeft, props]);
+  }, [timeLeft, props, currentQuestion]);
 
   return (
     <div>
