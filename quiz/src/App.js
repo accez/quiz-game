@@ -58,6 +58,7 @@ function App() {
     return (
       <Summery
         score={score}
+        unanswered={unanswered}
         total={questionsData.length} />
     )
   } else {
@@ -66,7 +67,7 @@ function App() {
         <header>
           <h1>Movie Quiz</h1>
           <Timer seconds={15}
-            currentQuestion={currentQuestion + 1}
+            currentQuestion={currentQuestion}
             setCurrentQuestion={setCurrentQuestion}
             setSummery={setSummery}
             unansweredIncrament={unansweredIncrament} />
