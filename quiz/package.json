@@ -1,4 +1,5 @@
 {
+  "homepage": "https://accez.github.io/quiz-game",
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "serialize-javascript": "^2.1.2"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
