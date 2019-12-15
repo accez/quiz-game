@@ -21,11 +21,13 @@ function App() {
   const [addTenLifeline, setAddTenLifeline] = useState(true)
   const [fifyFifyLifeline, setFiftyFiftyLifeline] = useState(true)
   let data = questionsData[currentQuestion]
-  /**
-   * Using helper function shuffleData to suffle the data
-  i get from my JSON file.
-  **/
+
   useEffect(() => {
+    /**
+  * Using helper function shuffleData to suffle the data
+  i get from my JSON file.
+  But i only wanna do it the first time the quiz renders
+  **/
     shuffleData(questionData.results)
     let spreadQuestionsData = [...questionData.results]
     spreadQuestionsData.splice(10, 50)
@@ -45,6 +47,7 @@ function App() {
     setAddTenLifeline(false)
   }
 
+  // same as removeTenLifeline function
   const removeFiftyFifty = () => {
     setFiftyFiftyLifeline(false)
   }
