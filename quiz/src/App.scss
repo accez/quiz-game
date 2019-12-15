@@ -1,0 +1,23 @@
+.container {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    h1{
+        font-size: 72px;
+        text-decoration: underline overline;
+    }
+    main{
+        width: 60%;
+        .lifeline-container{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+        }
+    }
+}
