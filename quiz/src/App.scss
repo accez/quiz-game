@@ -14,5 +14,10 @@
     }
     main{
         width: 60%;
+        .lifeline-container{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+        }
     }
 }

@@ -81,21 +81,23 @@ function App() {
       <div className="container">
         <header>
           <h1>Movie Quiz</h1>
-          {/* <Timer seconds={15}
+          <Timer seconds={15}
             currentQuestion={currentQuestion}
             setCurrentQuestion={setCurrentQuestion}
             setSummery={setSummery}
             unansweredIncrament={unansweredIncrament}
             addTenLifeline={addTenLifeline}
-          /> */}
+          />
         </header>
         <main>
           <Progress
             total={questionsData.length}
             current={currentQuestion + 1} />
           <Question question={data.question} />
-          {addTenLifeline ? <Lifeline text="+10sec" onClick={removeTenLifeline} /> : <React.Fragment />}
-          {fifyFifyLifeline ? <Lifeline text="50/50" onClick={removeFiftyFifty} /> : <React.Fragment />}
+          <div className="lifeline-container">
+            {addTenLifeline ? <Lifeline text="+10sec" onClick={removeTenLifeline} /> : <React.Fragment />}
+            {fifyFifyLifeline ? <Lifeline text="50/50" onClick={removeFiftyFifty} /> : <React.Fragment />}
+          </div>
           <Answers
             answer={data}
             correctScoreAndNextQuestion={correctScoreAndNextQuestion}
