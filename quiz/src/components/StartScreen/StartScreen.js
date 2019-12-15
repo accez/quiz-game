@@ -9,7 +9,7 @@ const StartScreen = (props) => {
       <div className="welcome-text">
         <h3>This is a movie quiz where you answer 10 film related questions.<br />
           You will have 15 seconds to answer each question.<br />
-          You start with two life lines that you can use anytime in the game.
+          You start with two lifelines that you can use anytime in the game.
           50/50 that removes two of the incorrect answers, +10 that will add 10 seconds to your round.
           <br />
           <br />
