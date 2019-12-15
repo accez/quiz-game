@@ -6,7 +6,7 @@ You also get two lifelines that you can use to help you out during the game. "50
 *React
 
 ## To run
-*yarn install
-*yarn start
+1. yarn install
+2. yarn start
 
 Enjoy :)
