@@ -36,7 +36,7 @@ function App() {
     setQuestionsData(spreadQuestionsData)
   }, [numberOfGames])
 
-
+  //Restarting the game
   const restartQuiz = () => {
     setScore(0)
     setCurrentQuestion(0)
