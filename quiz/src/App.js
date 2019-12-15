@@ -19,6 +19,7 @@ function App() {
   const [questionsData, setQuestionsData] = useState([])
   const [startScreen, setStartScreen] = useState(false)
   const [addTenLifeline, setAddTenLifeline] = useState(true)
+  const [fifyFifyLifeline, setFiftyFiftyLifeline] = useState(true)
   let data = questionsData[currentQuestion]
   /**
    * Using helper function shuffleData to suffle the data
@@ -42,6 +43,10 @@ function App() {
   /* Lifeline sets to true so you cant use a lifeline twice */
   const removeTenLifeline = () => {
     setAddTenLifeline(false)
+  }
+
+  const removeFiftyFifty = () => {
+    setFiftyFiftyLifeline(false)
   }
 
   const correctScoreAndNextQuestion = e => {
@@ -76,13 +81,13 @@ function App() {
       <div className="container">
         <header>
           <h1>Movie Quiz</h1>
-          <Timer seconds={15}
+          {/* <Timer seconds={15}
             currentQuestion={currentQuestion}
             setCurrentQuestion={setCurrentQuestion}
             setSummery={setSummery}
             unansweredIncrament={unansweredIncrament}
             addTenLifeline={addTenLifeline}
-          />
+          /> */}
         </header>
         <main>
           <Progress
@@ -90,10 +95,11 @@ function App() {
             current={currentQuestion + 1} />
           <Question question={data.question} />
           {addTenLifeline ? <Lifeline text="+10sec" onClick={removeTenLifeline} /> : <React.Fragment />}
-          {/* <Lifeline text="50/50" /> */}
+          {fifyFifyLifeline ? <Lifeline text="50/50" onClick={removeFiftyFifty} /> : <React.Fragment />}
           <Answers
             answer={data}
             correctScoreAndNextQuestion={correctScoreAndNextQuestion}
+            fifyFifyLifeline={fifyFifyLifeline}
           />
         </main>
       </div>
