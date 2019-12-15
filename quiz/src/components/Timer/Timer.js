@@ -4,8 +4,14 @@ const Timer = (props) => {
   // initialize timeLeft with the seconds prop
   const [timeLeft, setTimeLeft] = useState(props.seconds)
   const [currentQuestion, setCurrentQuestion] = useState(props.currentQuestion)
+  const [usedLifeline, setUsedLifeline] = useState(false)
 
+  if (props.addTenLifeline === false && !usedLifeline) {
+    setTimeLeft(timeLeft + 10)
+    setUsedLifeline(true)
+  }
   useEffect(() => {
+
     // exit early when we reach 0
     if (timeLeft === 0) {
       props.setCurrentQuestion(props.currentQuestion + 1)

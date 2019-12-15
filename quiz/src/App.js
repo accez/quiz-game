@@ -6,6 +6,7 @@ import Answers from './components/Answers/Answers'
 import Summery from './components/Summery/Summery'
 import StartScreen from './components/StartScreen/StartScreen'
 import Timer from './components/Timer/Timer'
+import Lifeline from './components/Lifeline/LifeLine'
 import questionData from './questionData'
 import { shuffleData } from './helper/shuffle'
 
@@ -17,6 +18,7 @@ function App() {
   const [summery, setSummery] = useState(false)
   const [questionsData, setQuestionsData] = useState([])
   const [startScreen, setStartScreen] = useState(false)
+  const [addTenLifeline, setAddTenLifeline] = useState(true)
   let data = questionsData[currentQuestion]
   /**
    * Using helper function shuffleData to suffle the data
@@ -30,8 +32,16 @@ function App() {
   }, [])
 
 
+  /* 
+  incramenting unanswered by one if you did not answer in time.
+  */
   const unansweredIncrament = () => {
     setUnanswered(unanswered + 1)
+  }
+
+  /* Lifeline sets to true so you cant use a lifeline twice */
+  const removeTenLifeline = () => {
+    setAddTenLifeline(false)
   }
 
   const correctScoreAndNextQuestion = e => {
@@ -70,13 +80,17 @@ function App() {
             currentQuestion={currentQuestion}
             setCurrentQuestion={setCurrentQuestion}
             setSummery={setSummery}
-            unansweredIncrament={unansweredIncrament} />
+            unansweredIncrament={unansweredIncrament}
+            addTenLifeline={addTenLifeline}
+          />
         </header>
         <main>
           <Progress
             total={questionsData.length}
             current={currentQuestion + 1} />
           <Question question={data.question} />
+          {addTenLifeline ? <Lifeline text="+10sec" onClick={removeTenLifeline} /> : <React.Fragment />}
+          {/* <Lifeline text="50/50" /> */}
           <Answers
             answer={data}
             correctScoreAndNextQuestion={correctScoreAndNextQuestion}
