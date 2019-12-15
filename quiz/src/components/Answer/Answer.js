@@ -6,6 +6,7 @@ const Answer = (props) => {
   return (
     <Button
       value={props.answer}
+      lifeline={props.lifeline}
       onClick={props.correctScoreAndNextQuestion}
       text={props.answer.replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&amp;/g, '&')} />
   )

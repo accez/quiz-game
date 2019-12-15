@@ -5,22 +5,18 @@ import './answers-styles.scss'
 
 
 const Answers = (props) => {
-  const [rightAndWrong, setRightAndWrong] = useState([])
   const [unClickAnsw, setUnClickAnsw] = useState([])
-  const [usedFiftyFiftyLifeline, setUsedFifyFiftyLifeline] = useState(false)
 
   let answers = [...props.answer.answers]
   shuffleData(answers)
-  console.log(unClickAnsw, 'unclick')
+
   useEffect(() => {
     const fiftyFifty = () => {
-      let arr = []
       let wrongAnswer = []
       let unclickableAnswers = []
       let getIndexOfWrongAnswerString
       let spreadLifelineAnswers = [...answers]
-      let filteredCorrectAnswer = spreadLifelineAnswers.filter(correctAnswer => correctAnswer === props.answer.correct_answer)
-      let indexOfCorrectAnswer = spreadLifelineAnswers.indexOf(props.answer.correct_answer)
+      let indexOfCorrectAnswer = answers.indexOf(props.answer.correct_answer)
       spreadLifelineAnswers.splice(indexOfCorrectAnswer, 1)
       var randomWrongAnswerIndex = Math.floor(Math.random() * spreadLifelineAnswers.length);
       spreadLifelineAnswers.filter((wrongAnswerOfArray, index) => {
@@ -34,21 +30,39 @@ const Answers = (props) => {
       spreadLifelineAnswers.splice(getIndexOfWrongAnswer, 1)
 
       unclickableAnswers = [...spreadLifelineAnswers]
-      arr = [...filteredCorrectAnswer, ...wrongAnswer]
-      setRightAndWrong(arr)
-      setUnClickAnsw(unclickableAnswers)
+      if (props.fifyFifyLifeline) {
+        setUnClickAnsw(unclickableAnswers)
+      }
     }
     fiftyFifty()
-  }, [])
+  }, [props.answer])
 
-  console.log(answers)
-  const listAnswers = answers.map((answer, index) =>
-    <Answer
-      key={index}
-      answer={answer}
-      correctScoreAndNextQuestion={props.correctScoreAndNextQuestion}
-    />
-  )
+  const listAnswers = answers.map((answer, index) => {
+    if (!props.fifyFifyLifeline && unClickAnsw.includes(answer)) {
+      return (
+        < Answer
+          lifeline={true}
+          key={index}
+          answer={answer}
+          correctScoreAndNextQuestion={props.correctScoreAndNextQuestion}
+        />)
+    } else if (props.fifyFifyLifeline === false) {
+      return (
+        < Answer
+          key={index}
+          answer={answer}
+          correctScoreAndNextQuestion={props.correctScoreAndNextQuestion}
+        />)
+    } else {
+      return (
+        < Answer
+          key={index}
+          answer={answer}
+          correctScoreAndNextQuestion={props.correctScoreAndNextQuestion}
+        />)
+    }
+  })
+
 
   return (
     <div className="answer-container">

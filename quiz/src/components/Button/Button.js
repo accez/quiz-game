@@ -3,7 +3,7 @@ import './button-styles.scss'
 
 const Button = (props) => {
   return (
-    <button text={props.text} onClick={props.onClick} value={props.value}>
+    <button className={props.lifeline ? "usedLifeline" : ""} text={props.text} onClick={props.onClick} value={props.value}>
       {props.text}
     </button>
   )
