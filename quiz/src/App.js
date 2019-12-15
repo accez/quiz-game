@@ -20,6 +20,8 @@ function App() {
   const [startScreen, setStartScreen] = useState(false)
   const [addTenLifeline, setAddTenLifeline] = useState(true)
   const [fifyFifyLifeline, setFiftyFiftyLifeline] = useState(true)
+  const [numberOfGames, setNumberOfGames] = useState(1)
+
   let data = questionsData[currentQuestion]
 
   useEffect(() => {
@@ -32,8 +34,18 @@ function App() {
     let spreadQuestionsData = [...questionData.results]
     spreadQuestionsData.splice(10, 50)
     setQuestionsData(spreadQuestionsData)
-  }, [])
+  }, [numberOfGames])
 
+
+  const restartQuiz = () => {
+    setScore(0)
+    setCurrentQuestion(0)
+    setUnanswered(0)
+    setAddTenLifeline(true)
+    setFiftyFiftyLifeline(true)
+    setNumberOfGames(numberOfGames + 1)
+    setSummery(false)
+  }
 
   /* 
   incramenting unanswered by one if you did not answer in time.
@@ -77,7 +89,9 @@ function App() {
       <Summery
         score={score}
         unanswered={unanswered}
-        total={questionsData.length} />
+        total={questionsData.length}
+        restartQuiz={restartQuiz}
+      />
     )
   } else {
     return (
